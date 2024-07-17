@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class categorias extends Model
 {
+    protected $fillable = ['nombre', 'img'];
+    
     use HasFactory;
 }
