@@ -17,10 +17,11 @@ return new class extends Migration
             $table-> id();
             $table->string('nombre');
             $table->string('nombre_cientifico');
-            $table->string('caracteristicas');
-            $table->string('descripcion');
+            $table->text('caracteristicas');
+            $table->text('descripcion');
             $table->string('datos_claves');
             $table->integer('id_categoria');
+            $table->foreign('id_categoria')->references('id')->on('categorias');
             $table->string('img');
             $table->timestamps();
         });
