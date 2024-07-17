@@ -11,7 +11,7 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\SearchController;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
