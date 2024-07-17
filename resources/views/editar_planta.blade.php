@@ -22,7 +22,7 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Caracteristicas (Opcional)</label>
-            <input type="text" value="{{$infoEditarP->caracteristicas2}}" class="form-control" name="caracteristicasEditp">
+            <input type="text" value="{{$infoEditarP->caracteristicas2}}" class="form-control" name="caracteristicasEditpo">
           </div>
           <div class="mb-3">
             <label class="form-label">Descripcion</label>
@@ -30,7 +30,7 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Descripcion (Opcional)</label>
-            <input type="text" value="{{$infoEditarP->descripcion2}}" class="form-control" name="descripcionEditp">
+            <input type="text" value="{{$infoEditarP->descripcion2}}" class="form-control" name="descripcionEditpo">
           </div>
           <div class="mb-3">
             <label class="form-label">Datos Claves</label>
@@ -38,7 +38,7 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Datos Claves (Opcional)</label>
-            <input type="text" value="{{$infoEditarP->datos_claves2}}" class="form-control" name="datos_clavesEditp">
+            <input type="text" value="{{$infoEditarP->datos_claves2}}" class="form-control" name="datos_clavesEditpo">
           </div>
           <div class="mb-3">
             <label class="form-label">Imagen</label>
