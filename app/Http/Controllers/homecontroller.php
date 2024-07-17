@@ -17,7 +17,7 @@ class homecontroller extends Controller
     public function index()
     {
         $comments = Comentario::with('user')->orderBy('created_at', 'asc')->get();
-        return view('', ['comments' => $comments]);
+        return view('/home', ['comments' => $comments]);
     }
     
     public function top3()

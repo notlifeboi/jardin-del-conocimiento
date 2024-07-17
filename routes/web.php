@@ -33,8 +33,6 @@ Route::get('/categorias/crear/{categoria}',[plantascontroller::class, "categoria
 
 Auth::routes();
 
-Auth::routes();
-
 Route::get('/forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
 Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
 Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
