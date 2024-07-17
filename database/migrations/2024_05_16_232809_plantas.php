@@ -24,7 +24,6 @@ return new class extends Migration
             $table->text('datos_claves1');
             $table->text('datos_claves2')->nullable();
             $table->integer('id_categoria');
-            $table->foreign('id_categoria')->references('id')->on('categorias');
             $table->string('img');
             $table->timestamps();
         });
