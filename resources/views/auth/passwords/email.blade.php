@@ -23,7 +23,9 @@
                                     <a style="font-size: 22px; color: #1C622D" href="{{route('login')}}">< volver</a>
                                 </div>
                                 <div class="text-center">
+                                <a href="/">
                                     <img src="{{ asset('img/logo.png') }}" style="width: 120px;" alt="logo">
+                                </a>
                                     <h4 class="mt-1 mb-4">Recuperar contraseña</h4>
                                 </div>
                                 @if (session('status'))
