@@ -544,7 +544,7 @@ return new class extends Migration
                 $datosPlanta[$columna] = $plantas[$i][$index];
             }
 
-            Planta::insert($datosPlanta);
+            plantas::insert($datosPlanta);
         }
     
     }
