@@ -37,21 +37,25 @@
         <div class="col col-12 col-lg-7 col-md-8 mt-5"style>
           <h3 style="font-weight: bold;">{{$plantasinfo->nombre}}</h3>
           <h3 style="color: dimgray;font-size: 15px;">{{$plantasinfo->nombre_cientifico}}</h3>
-          <h2 style="font-size: 15px;">{{$plantasinfo->descripcion}}</h2>
+          <h2 style="font-size: 15px;">{{$plantasinfo->descripcion1}}</h2>
+          <h2 style="font-size: 15px;">{{$plantasinfo->descripcion2}}</h2>
         </div>
         
       </div>
       <div class="infoD">
         <h3>Descripción de la Planta</h3>
-        <p>{{$plantasinfo->descripcion}}</p>
+        <p>{{$plantasinfo->descripcion1}}</p>
+        <p>{{$plantasinfo->descripcion2}}</p>
       </div>
       <div class="info">
         <h3>Caracteristicas de la Planta</h3>
-        <p>{{$plantasinfo->caracteristicas}}</p>
+        <p>{{$plantasinfo->caracteristicas1}}</p>
+        <p>{{$plantasinfo->caracteristicas2}}</p>
       </div>
       <div class="info">
         <h3>Curiosidades de la Planta</h3>
-        <p>{{$plantasinfo->datos_claves}}</p>
+        <p>{{$plantasinfo->datos_claves1}}</p>
+        <p>{{$plantasinfo->datos_claves2}}</p>
       </div>
     </div>
     @role('administrador')

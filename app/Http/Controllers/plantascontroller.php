@@ -44,10 +44,13 @@ class plantascontroller extends Controller
     {
         $newPlanta= new Plantas();
         $newPlanta -> nombre = $request -> get('nombrep');
-        $newPlanta -> caracteristicas = $request -> get('caracteristicasp');
-        $newPlanta -> descripcion = $request -> get('descripcionp');
-        $newPlanta -> datos_claves = $request -> get('datos_clavesp');
         $newPlanta -> nombre_cientifico = $request -> get('nombre_cientificop');
+        $newPlanta -> caracteristicas1 = $request -> get('caracteristicasp');
+        $newPlanta -> caracteristicas2 = $request -> get('caracteristicaspo');
+        $newPlanta -> descripcion1 = $request -> get('descripcionp');
+        $newPlanta -> descripcion2 = $request -> get('descripcionpo');
+        $newPlanta -> datos_claves1 = $request -> get('datos_clavesp');
+        $newPlanta -> datos_claves2 = $request -> get('datos_clavespo');
         $newPlanta -> id_categoria = $request -> get('id_categoria');
         $newPlanta -> img = $request -> get('imgC');
         $newPlanta -> save();

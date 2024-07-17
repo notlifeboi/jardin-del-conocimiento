@@ -17,9 +17,12 @@ return new class extends Migration
             $table-> id();
             $table->string('nombre');
             $table->string('nombre_cientifico');
-            $table->text('caracteristicas');
-            $table->text('descripcion');
-            $table->text('datos_claves');
+            $table->text('caracteristicas1');
+            $table->text('caracteristicas2')->nullable();
+            $table->text('descripcion1');
+            $table->text('descripcion2')->nullable();
+            $table->text('datos_claves1');
+            $table->text('datos_claves2')->nullable();
             $table->integer('id_categoria');
             $table->foreign('id_categoria')->references('id')->on('categorias');
             $table->string('img');
