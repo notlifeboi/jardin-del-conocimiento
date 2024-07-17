@@ -48,7 +48,7 @@ return new class extends Migration
             
             $datosPlanta = array_combine($columnas, $planta);
     
-            Planta::insert($datosPlanta);
+            plantas::insert($datosPlanta);
         }
     }
 
