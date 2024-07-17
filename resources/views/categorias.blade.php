@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ asset('css/categorias.css') }}">
 @endsection
 @section('contenido')
-    <h1>Categorias</h1>
+    <h1>HOLAAA CAMBIOS</h1>
     <div class="container">
         @role('administrador')
         <a href="/categorias/create"><button style="font-family: 'italic';"class="btn btn-warning my-3">Crear Categoria</button></a>
