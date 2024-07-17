@@ -30,7 +30,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        $columnas = ['nombre', 'nombre_cientifico', 'caracteristicas', 'descripcion', 'datos_claves', 'id_categoria', 'img'];
+        $columnas = ['nombre', 'nombre_cientifico', 'caracteristicas1', 'descripcion1', 'datos_claves1', 'id_categoria', 'img'];
 
         $plantas = [
         [
