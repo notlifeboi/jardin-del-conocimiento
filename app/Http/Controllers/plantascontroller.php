@@ -82,6 +82,8 @@ class plantascontroller extends Controller
      */
     public function update(Request $request, string $id)
     {
+        $comments = Comentario::with('user')->orderBy('created_at', 'asc')->get();
+
         $editPlanta= plantas::findOrFail($id);
         $editPlanta -> nombre = $request -> get('nombreEditp');
         $editPlanta -> caracteristicas = $request -> get('caracteristicasEditp');
@@ -91,7 +93,7 @@ class plantascontroller extends Controller
         $editPlanta -> id_categoria = $request -> get('categoriaEditp');
         $editPlanta -> img = $request -> get('imgE');
         $editPlanta -> save();
-        return redirect('/plantas');
+        return view('categorias',['comments'=>$comments]);
     }
 
     /**
@@ -99,8 +101,10 @@ class plantascontroller extends Controller
      */
     public function destroy(string $id)
     {
+        $comments = Comentario::with('user')->orderBy('created_at', 'asc')->get();
+
         $deletePlanta= plantas::findOrFail($id);
         $deletePlanta -> DELETE();
-        return redirect('/plantas');
+        return view('categorias',['comments'=>$comments]);
     }
 }
