@@ -42,9 +42,6 @@ class plantascontroller extends Controller
      */
     public function store(Request $request)
     {
-
-        $comments = Comentario::with('user')->orderBy('created_at', 'asc')->get();
-
         $newPlanta= new Plantas();
         $newPlanta -> nombre = $request -> get('nombrep');
         $newPlanta -> caracteristicas = $request -> get('caracteristicasp');
@@ -54,7 +51,7 @@ class plantascontroller extends Controller
         $newPlanta -> id_categoria = $request -> get('id_categoria');
         $newPlanta -> img = $request -> get('imgC');
         $newPlanta -> save();
-        return view('categorias',['comments'=>$comments]);
+        return redirect('/plantas');
     }
 
     /**
@@ -82,8 +79,6 @@ class plantascontroller extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $comments = Comentario::with('user')->orderBy('created_at', 'asc')->get();
-
         $editPlanta= plantas::findOrFail($id);
         $editPlanta -> nombre = $request -> get('nombreEditp');
         $editPlanta -> caracteristicas = $request -> get('caracteristicasEditp');
@@ -93,7 +88,7 @@ class plantascontroller extends Controller
         $editPlanta -> id_categoria = $request -> get('categoriaEditp');
         $editPlanta -> img = $request -> get('imgE');
         $editPlanta -> save();
-        return view('categorias',['comments'=>$comments]);
+        return redirect('/plantas');
     }
 
     /**
@@ -101,10 +96,8 @@ class plantascontroller extends Controller
      */
     public function destroy(string $id)
     {
-        $comments = Comentario::with('user')->orderBy('created_at', 'asc')->get();
-
         $deletePlanta= plantas::findOrFail($id);
         $deletePlanta -> DELETE();
-        return view('categorias',['comments'=>$comments]);
+        return redirect('/plantas');
     }
 }
