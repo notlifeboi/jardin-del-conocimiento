@@ -18,15 +18,27 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Caracteristicas</label>
-            <input type="text" value="{{$infoEditarP->caracteristicas}}" class="form-control" name="caracteristicasEditp">
+            <input type="text" value="{{$infoEditarP->caracteristicas1}}" class="form-control" name="caracteristicasEditp">
           </div>
           <div class="mb-3">
-            <label class="form-label">Datos Claves</label>
-            <input type="text" value="{{$infoEditarP->datos_claves}}" class="form-control" name="datos_clavesEditp">
+            <label class="form-label">Caracteristicas (Opcional)</label>
+            <input type="text" value="{{$infoEditarP->caracteristicas2}}" class="form-control" name="caracteristicasEditp">
           </div>
           <div class="mb-3">
             <label class="form-label">Descripcion</label>
-            <input type="text" value="{{$infoEditarP->descripcion}}" class="form-control" name="descripcionEditp">
+            <input type="text" value="{{$infoEditarP->descripcion1}}" class="form-control" name="descripcionEditp">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Descripcion (Opcional)</label>
+            <input type="text" value="{{$infoEditarP->descripcion2}}" class="form-control" name="descripcionEditp">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Datos Claves</label>
+            <input type="text" value="{{$infoEditarP->datos_claves1}}" class="form-control" name="datos_clavesEditp">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Datos Claves (Opcional)</label>
+            <input type="text" value="{{$infoEditarP->datos_claves2}}" class="form-control" name="datos_clavesEditp">
           </div>
           <div class="mb-3">
             <label class="form-label">Imagen</label>

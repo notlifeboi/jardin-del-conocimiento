@@ -84,9 +84,12 @@ class plantascontroller extends Controller
     {
         $editPlanta= plantas::findOrFail($id);
         $editPlanta -> nombre = $request -> get('nombreEditp');
-        $editPlanta -> caracteristicas = $request -> get('caracteristicasEditp');
-        $editPlanta -> descripcion = $request -> get('descripcionEditp');
-        $editPlanta -> datos_claves = $request -> get('datos_clavesEditp');
+        $editPlanta -> caracteristicas1 = $request -> get('caracteristicasEditp');
+        $editPlanta -> caracteristicas2 = $request -> get('caracteristicasEditpo');
+        $editPlanta -> descripcion1 = $request -> get('descripcionEditp');
+        $editPlanta -> descripcion2 = $request -> get('descripcionEditpo');
+        $editPlanta -> datos_claves1 = $request -> get('datos_clavesEditp');
+        $editPlanta -> datos_claves2 = $request -> get('datos_clavesEditpo');
         $editPlanta -> nombre_cientifico = $request -> get('nombrecEditp');
         $editPlanta -> id_categoria = $request -> get('categoriaEditp');
         $editPlanta -> img = $request -> get('imgE');
