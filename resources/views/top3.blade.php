@@ -25,7 +25,7 @@
                 </h2>
             </div>
             <div class="col col-lg-12 col-sm-12 col-md-6" id="col_home" >
-                <img src="img\plantas\Lirio_cobra.jpg" class="img_home" alt="imagen3">
+                <img src="img\plantas\Lirio_Cobra.jpg" class="img_home" alt="imagen3">
             </div>
             <div class="col ms-3">
                 <h3>Aspecto:</h3>
@@ -61,7 +61,7 @@
                 </h2>
             </div>
             <div class="col col-lg-12 col-sm-12 col-med-6" id="col_home" >
-                <img src="img\plantas\Planta_arcoiris.jpg" class="img_home" alt="imagen3">
+                <img src="img\plantas\Planta_Arcoiris.jpg" class="img_home" alt="imagen3">
             </div>
             <div class="col ms-5">
                 <h3>Aspecto: </h3>
