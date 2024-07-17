@@ -1,0 +1,14 @@
+h7 a{
+    color: #4CAF50;
+    font-size: 30px;
+}
+ h7,h2, h3{
+    font-family: "regular";
+    font-weight: bold !important;
+    color: #4CAF50 !important;
+ }
+ h1,h5{
+    font-family: "italic";
+    font-weight: bold !important;
+    color: #4CAF50 !important;
+ }

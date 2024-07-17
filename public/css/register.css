@@ -1,0 +1,40 @@
+.container-custom {
+    max-width: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.background-image {
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-hojas-tropicales-oscuro-realista_23-2148403371.jpg?w=740&t=st=1716477977~exp=1716478577~hmac=abb4a1d3118b57fcdf8baf55cebb882612c6b8ddd6041bdd5e7b384b7d730581");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.btn-login {
+    background-color: #1C622D;
+    border-color: #1C622D;
+    color: #fff;
+}
+.btn-registrarse{
+    background-color: #1C622D;
+    border-color: #1C622D;
+    color: #fff;
+    
+}
+.btn-login:hover {
+    background-color: #6A994E;
+    border-color: #6A994E;
+    color: #fff;
+    
+}   
+.btn-registrarse:hover {
+    background-color: #6A994E;
+    border-color: #6A994E;
+    color: #fff;
+    
+}
