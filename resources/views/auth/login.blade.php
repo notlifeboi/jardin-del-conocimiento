@@ -21,7 +21,9 @@
                         <div class="card rounded-3 text-black container-custom">
                             <div class="card-body mx-md-4">
                                 <div class="text-center">
+                                    <a href="/">
                                     <img src="{{ asset('img/logo.png') }}" style="width: 120px;" alt="logo">
+                                    </a>
                                     <h4 class="mt-1 mb-4">Iniciar sesión</h4>
                                     @if($errors->any())
                                         <div class="alert alert-danger">
