@@ -54,7 +54,7 @@ class plantascontroller extends Controller
         $newPlanta -> id_categoria = $request -> get('id_categoria');
         $newPlanta -> img = $request -> get('imgC');
         $newPlanta -> save();
-        return view('/categorias',['comments'=>$comments]);
+        return view('categorias',['comments'=>$comments]);
     }
 
     /**
