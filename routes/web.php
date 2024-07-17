@@ -11,12 +11,11 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\SearchController;
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/top3', [HomeController::class, 'top3'])->name('top3');
 
 Route::middleware('auth')->group(function () {
@@ -29,17 +28,12 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('/categorias',categoriascontroller::class);
 Route::resource('/plantas',plantascontroller::class);
-Route::get('/home', [homeController::class, 'index'])->name('home');
 Route::get('/categorias/{categoria}',[plantascontroller::class, "categorias"]);
 Route::get('/categorias/crear/{categoria}',[plantascontroller::class, "categoria_crear_planta"]);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
 Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
