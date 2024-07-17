@@ -20,12 +20,24 @@
             <input type="text" class="form-control" name="caracteristicasp">
           </div>
           <div class="mb-3">
+            <label class="form-label">Caracteristicas (Opcional)</label>
+            <input type="text" class="form-control" name="caracteristicaspo">
+          </div>
+          <div class="mb-3">
             <label class="form-label">Descripcion</label>
             <input type="text" class="form-control" name="descripcionp">
           </div>
           <div class="mb-3">
+            <label class="form-label">Descripcion (Opcional)</label>
+            <input type="text" class="form-control" name="descripcionpo">
+          </div>
+          <div class="mb-3">
             <label class="form-label">Datos Claves</label>
             <input type="text" class="form-control" name="datos_clavesp">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Datos Claves (Opcional)</label>
+            <input type="text" class="form-control" name="datos_clavespo">
           </div>
           <div class="mb-3">
             <label class="form-label">Imagen</label>
