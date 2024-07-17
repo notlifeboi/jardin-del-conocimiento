@@ -533,12 +533,20 @@ return new class extends Migration
             ],
         ];
 
-        foreach ($plantas as $planta) {
+        $numeroPlantas = count($plantas);
+
+        for ($i = 0; $i < $numeroPlantas; $i++) {
             
-            $datosPlanta = array_combine($columnas, $planta);
-    
-            plantas::insert($datosPlanta);
+            $datosPlanta = [];
+
+            foreach ($columnas as $index => $columna) {
+                
+                $datosPlanta[$columna] = $plantas[$i][$index];
+            }
+
+            Planta::insert($datosPlanta);
         }
+    
     }
 
     /**
