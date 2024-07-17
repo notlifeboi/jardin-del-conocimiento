@@ -181,7 +181,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
           <li>
-          <a class="navbar-brand" href="/home"><img style="width: 60px;height: 60px;" src={{ asset('img/logo.png') }} alt="logo"></a>
+          <a class="navbar-brand" href="/"><img style="width: 60px;height: 60px;" src={{ asset('img/logo.png') }} alt="logo"></a>
           </li>
           <li>
           <li>

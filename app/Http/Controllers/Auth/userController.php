@@ -60,7 +60,7 @@ class userController extends Controller
             $UserEdit -> picture = "/" . $destinationPath . $filename;
         }
         $UserEdit -> save();
-        return redirect('/home');
+        return redirect('/');
     }
     /**
      * Remove the specified resource from storage.

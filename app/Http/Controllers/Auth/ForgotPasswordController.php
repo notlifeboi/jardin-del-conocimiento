@@ -23,7 +23,7 @@ class ForgotPasswordController extends Controller
     |
     */
 
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     
     public function sendResetLinkEmail(Request $request)
