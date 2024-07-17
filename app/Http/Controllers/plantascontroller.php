@@ -42,6 +42,9 @@ class plantascontroller extends Controller
      */
     public function store(Request $request)
     {
+        
+        $comments = Comentario::with('user')->orderBy('created_at', 'asc')->get();
+
         $newPlanta= new Plantas();
         $newPlanta -> nombre = $request -> get('nombrep');
         $newPlanta -> caracteristicas = $request -> get('caracteristicasp');
@@ -51,7 +54,7 @@ class plantascontroller extends Controller
         $newPlanta -> id_categoria = $request -> get('id_categoria');
         $newPlanta -> img = $request -> get('imgC');
         $newPlanta -> save();
-        return redirect('/plantas');
+        return view('crear_planta',['comments'=>$comments]);
     }
 
     /**
