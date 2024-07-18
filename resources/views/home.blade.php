@@ -1,7 +1,7 @@
 @extends ('plantilla')
 @section('contenido')
 <style>
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .direccion{
       font-size: 20px;
       font-family: 'regular';
