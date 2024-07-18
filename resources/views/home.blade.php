@@ -6,8 +6,9 @@
     direction: rtl;
   }
 
-    @media (max-width: 767px) {
+  @media (max-width: 767px) {
     .direccion{
+      font-weight: bold;
       direction: ltr;
     }
   }"
