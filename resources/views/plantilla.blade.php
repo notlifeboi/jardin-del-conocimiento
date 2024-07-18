@@ -186,9 +186,9 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span> 
           </button>
-          <div class="collapse navbar-collapse mt-4 col-6" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
           <div class="me-auto">
-            <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12" role="search">
+            <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12 mt-md-4" role="search">
               <input class="form-control me-2" type="search" name="buscar" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-search" type="submit">
                   <i class="bi bi-search"></i>
