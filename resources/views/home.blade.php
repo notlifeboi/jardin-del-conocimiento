@@ -44,14 +44,16 @@
         <div class="col col-lg-6 col-md-12 col-12" id="col_home">
           <img src="img\img3.jpg" class="img_home" alt="imagen2" style="max-width:90%;">
         </div>
-        <div style="text-align: justify" class="col col-lg-6 col-md-12 col-12" id="col_home" >
+        <div style="text-align: justify" class="col col-lg-6 col-md-12 col-12" id="col_home">
+                <p>
                 Destacamos los beneficios tanto físicos como emocionales
                 que el contacto con la naturaleza y el cultivo de plantas
-                pueden aportar a las personas.<br>
+                pueden aportar a las personas.<br><br>
                 Este proyecto aspira a abordar estos desafíos al educar y
                 capacitar a las personas para que se conviertan en defensores
                 activos de la naturaleza y adopten prácticas más sostenibles
                 en sus vidas diarias.
+                </p>
         </div>
     </div>
     <div class="row my-2 mb-5">
