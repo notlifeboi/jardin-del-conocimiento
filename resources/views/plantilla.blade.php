@@ -160,24 +160,6 @@
         </style>
   </head>
   <body>
-    <!--<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #A7C957 !important">
-        <div class="container-fluid" style="background-color: #A7C957"  >
-          <a class="navbar-brand" style="font-family:'Geneva'" href="/home">Jardin del conocimiento</a>
-          <span class="nav-separator"></span> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav"style="font-family:'verdana';">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" style="color:#ffff !important"aria-current="page" href="/home">Home</a>
-              </li>
-              <li class="nav-item" >
-                <a class="nav-link"style="color:#ffff !important" href="/categorias">Categorias</a>
-            </ul>
-          </div>
-        </div>
-      </nav>-->
       <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
           <li>
