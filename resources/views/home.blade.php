@@ -1,10 +1,5 @@
 @extends ('plantilla')
 @section('contenido')
-<style>
-  .carousel-img {
-  object-fit: cover;
-  }
-</style>
 <div id="carouselExampleCaptions" class="carousel slide mb-5">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -13,13 +8,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img\img1.jpg" class="d-block w-100 " alt="imagen1">
+        <img src="img\img1.jpg" style="object-fit: cover;" class="d-block w-100" alt="imagen1">
       </div>
       <div class="carousel-item">
-        <img src="img\img2.jpg" class="d-block w-100" alt="imagen2">
+        <img src="img\img2.jpg" style="object-fit: cover;" class="d-block w-100" alt="imagen2">
       </div>
       <div class="carousel-item">
-        <img src="img\img3.jpg" class="d-block w-100" alt="imagen3"> 
+        <img src="img\img3.jpg" style="object-fit: cover;" class="d-block w-100" alt="imagen3"> 
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
