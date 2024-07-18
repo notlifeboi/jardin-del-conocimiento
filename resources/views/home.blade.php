@@ -3,7 +3,6 @@
 <style>
   .carousel-img {
   object-fit: cover;
-  height: 400px; 
   }
 </style>
 <div id="carouselExampleCaptions" class="carousel slide mb-5">
