@@ -68,9 +68,11 @@
                 cultivar y cuidar plantas en diversos entornos, desde jardines
                 urbanos hasta espacios interiores</p>
         </div>
+        <center>
         <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" style="max-width:80%;">
             <img src="img\img2.jpg" class="img_home" alt="imagen3">
         </div>
+        </center>
     </div>
   </div>
 @endsection
