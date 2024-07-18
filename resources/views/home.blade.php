@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="row">
-        <div class="col col-lg-6 col-sm-12 col-md-6 setoff-2" id="col_home" >
+        <div class="col col-lg-6 col-sm-12 col-md-6 setoff-2" id="col_home" style="max-width:80%;">
             <img src="img\img3.jpg" class="img_home" alt="imagen3">
         </div>
         <div class="col col-lg-6 col-sm-12 col-md-6" id="col_home" >
@@ -55,7 +55,7 @@
                 en sus vidas diarias.</p>
         </div>
     </div>
-    <div class="row my-2">
+    <div class="row my-2 mb-5">
         <div class="col col-lg-6 col-sm-12 col-med-6" id="col_home" >
             <p>Surgimos como una respuesta a la necesidad de reconectar a
                 las personas con la naturaleza en un mundo cada vez más
@@ -67,7 +67,7 @@
                 urbanos hasta espacios interiores</p>
         </div>
         <div class="col col-lg-6 col-sm-12 col-med-6" id="col_home" >
-            <img src="img\img2.jpg" class="img_home" alt="imagen3">
+            <img src="img\img2.jpg" class="img_home" alt="imagen3" style="max-width:80%;">
         </div>
     </div>
   </div>
