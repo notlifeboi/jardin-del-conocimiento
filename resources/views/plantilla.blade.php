@@ -188,7 +188,7 @@
           </button>
           <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
           <div class="me-auto">
-            <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12 mt-md-4" role="search">
+            <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12 mt-0 mt-md-4" role="search">
               <input class="form-control me-2" type="search" name="buscar" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-search" type="submit">
                   <i class="bi bi-search"></i>
