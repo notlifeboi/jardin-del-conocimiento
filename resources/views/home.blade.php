@@ -1,5 +1,17 @@
 @extends ('plantilla')
 @section('contenido')
+<style>
+  .direccion{
+    text-align: justify;
+    direction: rtl;
+  }
+
+    @media (max-width: 767px) {
+    .direccion{
+      direction: ltr;
+    }
+  }"
+</style>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -57,7 +69,7 @@
         </div>
     </div>
     <div class="row my-2 mb-5">
-        <div style="text-align: justify; direction: rtl; @media (max-width: 767px) {direction: ltr;}" class="col col-lg-6 col-md-12 col-12" id="col_home" >
+        <div class="direccion" class="col col-lg-6 col-md-12 col-12" id="col_home" >
                 <p>
                 Surgimos como una respuesta a la necesidad de reconectar a
                 las personas con la naturaleza en un mundo cada vez más
