@@ -28,7 +28,7 @@
 </div>
   <div class="container">
     <div class="row my-5" id="top3">
-      <div class="col col-lg-6 col-md-12 col-sm-12">
+      <div class="col col-lg-6 col-md-12 col-12">
         <h3>¡Las 3 plantas carnívoras más fascinantes para tu hogar!</h3>
         <p>
           Las plantas carnívoras no solo son llamativas y exóticas, sino que también son un recordatorio del ingenio de la naturaleza. Atraen y digieren insectos para obtener nutrientes, lo que las convierte en una adición única a cualquier hogar.
@@ -36,12 +36,12 @@
         </p>
         <a href="/top3"><button style="font-family: 'italic';"class="btn btn-outline-success col-12 m-1">ver mas</button></a>
       </div>
-      <div class="col col-lg-6 col-md-12 col-sm-12" id="col_home">
+      <div class="col col-lg-6 col-md-12 col-12" id="col_home">
       <img src="img/categorias/Carnivoras.jpg" class="img_home" alt="imagen3" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     </div>
     <div class="row">
-        <div class="col col-lg-6 col-md-12 col-sm-12" id="col_home" >
+        <div class="col col-lg-6 col-md-12 col-12" id="col_home" >
             <p>Destacamos los beneficios tanto físicos como emocionales
                 que el contacto con la naturaleza y el cultivo de plantas
                 pueden aportar a las personas. </br>
@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="row my-2 mb-5">
-        <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" >
+        <div class="col col-lg-6 col-md-12 col-12" id="col_home" >
             <p>Surgimos como una respuesta a la necesidad de reconectar a
                 las personas con la naturaleza en un mundo cada vez más
                 urbanizado y desconectado con ella.
@@ -63,7 +63,7 @@
                 cultivar y cuidar plantas en diversos entornos, desde jardines
                 urbanos hasta espacios interiores</p>
         </div>
-        <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home">
+        <div class="col col-lg-6 col-md-12 col-12" id="col_home">
             <img src="img\img2.jpg" class="img_home" alt="imagen3" style="max-width:90%;">
         </div>
     </div>
