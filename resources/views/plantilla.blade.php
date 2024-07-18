@@ -183,7 +183,11 @@
           <li>
           <a class="navbar-brand" href="/"><img style="width: 60px;height: 60px;" src={{ asset('img/logo.png') }} alt="logo"></a>
           </li>
-            <div class="me-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span> 
+          </button>
+          <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+          <div class="me-auto">
             <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12" role="search">
               <input class="form-control me-2" type="search" name="buscar" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-search" type="submit">
@@ -191,10 +195,6 @@
                 </button>
               </form>
             </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span> 
-          </button>
-          <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
             <ul class="navbar-nav mt-3 ms-auto mb-3 mb-lg-3">
               <li class="nav-item me-3">
                 <a class="nav-link" href="/categorias" id="text1">Categorias</a>
