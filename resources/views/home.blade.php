@@ -41,10 +41,12 @@
       </div>
     </div>
     <div class="row">
-        <div class="col col-lg-6 col-sm-12 col-md-6 setoff-2" id="col_home" style="max-width:80%;">
+      <center>
+        <div class="col col-lg-6 col-sm-12 col-md-12 setoff-2" id="col_home" style="max-width:80%;">
             <img src="img\img3.jpg" class="img_home" alt="imagen3">
         </div>
-        <div class="col col-lg-6 col-sm-12 col-md-6" id="col_home" >
+        </center>
+        <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" >
             <p>Destacamos los beneficios tanto físicos como emocionales
                 que el contacto con la naturaleza y el cultivo de plantas
                 pueden aportar a las personas. </br>
