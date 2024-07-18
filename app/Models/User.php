@@ -10,7 +10,7 @@ use Illuminate\Contracts\Auth\CanResetPassword;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable implements CanResetPassword
+class user extends Authenticatable implements CanResetPassword
 {
     use Notifiable;
     use HasFactory;
