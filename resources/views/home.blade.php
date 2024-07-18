@@ -8,7 +8,8 @@
 
   @media (max-width: 767px) {
     .direccion{
-      font-weight: bold;
+      font-size: 20px;
+      font-family: 'regular';
       direction: ltr;
     }
   }"
