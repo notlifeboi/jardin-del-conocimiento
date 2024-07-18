@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="row my-2 mb-5">
-        <div style="text-align: justify; direction: rtl;" class="col col-lg-6 col-md-12 col-12" id="col_home" >
+        <div style="text-align: justify; direction: rtl; @media (max-width: 767px) {direction: ltr;}" class="col col-lg-6 col-md-12 col-12" id="col_home" >
                 <p>
                 Surgimos como una respuesta a la necesidad de reconectar a
                 las personas con la naturaleza en un mundo cada vez más
