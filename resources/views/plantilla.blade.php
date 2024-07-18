@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preload" href="img/img1.jpg" as="image">
+    <link rel="preload" href="img/img2.jpg" as="image">
+    <link rel="preload" href="img/img3.jpg" as="image">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jardin del conocimiento</title>
