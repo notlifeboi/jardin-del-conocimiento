@@ -183,6 +183,7 @@
           <li>
           <a class="navbar-brand" href="/"><img style="width: 60px;height: 60px;" src={{ asset('img/logo.png') }} alt="logo"></a>
           </li>
+          <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
           <li>
             <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12 mt-1" role="search">
               <input class="form-control me-2" type="search" name="buscar" placeholder="Buscar" aria-label="Search">
