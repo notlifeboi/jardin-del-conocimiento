@@ -1,15 +1,20 @@
 @extends ('plantilla')
 @section('contenido')
 <style>
-  .direccion{
-    text-align: justify;
-    direction: rtl;
+  @media (max-width: 768px) {
+    .direccion{
+      font-size: 20px;
+      font-family: 'regular';
+      text-align: justify;
+      direction: rtl;
+    }
   }
 
   @media (max-width: 767px) {
     .direccion{
       font-size: 20px;
       font-family: 'regular';
+      text-align: justify;
       direction: ltr;
     }
   }"
