@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
             body {
+            text-align: justify;
             margin: 0;
             padding: 0;
             }
