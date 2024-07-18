@@ -57,15 +57,16 @@
         </div>
     </div>
     <div class="row my-2 mb-5">
-        <div class="col col-lg-6 col-md-12 col-12" id="col_home" >
-            <p>Surgimos como una respuesta a la necesidad de reconectar a
+        <div style="text-align: justify; direction: rtl;" class="col col-lg-6 col-md-12 col-12" id="col_home" >
+                <p>
+                Surgimos como una respuesta a la necesidad de reconectar a
                 las personas con la naturaleza en un mundo cada vez más
-                urbanizado y desconectado con ella.
-            </br></br>
+                urbanizado y desconectado con ella.</br></br>
                 A través de una plataforma educativa, buscamos proporcionar
                 a los usuarios conocimientos y habilidades necesarias para
                 cultivar y cuidar plantas en diversos entornos, desde jardines
-                urbanos hasta espacios interiores</p>
+                urbanos hasta espacios interiores
+                </p>
         </div>
         <div class="col col-lg-6 col-md-12 col-12" id="col_home">
             <img src="img\img2.jpg" class="img_home" alt="imagen3" style="max-width:90%;">
