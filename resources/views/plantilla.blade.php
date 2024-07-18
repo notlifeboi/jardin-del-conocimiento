@@ -183,16 +183,14 @@
           <li>
           <a class="navbar-brand" href="/"><img style="width: 60px;height: 60px;" src={{ asset('img/logo.png') }} alt="logo"></a>
           </li>
-          <li>
             <div>
             <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12" role="search">
               <input class="form-control me-2" type="search" name="buscar" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-search" type="submit">
+                <button class="btn btn-search" type="submit">
                   <i class="bi bi-search"></i>
-              </button>
+                </button>
               </form>
             </div>
-          </li>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span> 
           </button>
