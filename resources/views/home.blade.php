@@ -43,7 +43,7 @@
     <div class="row">
       <center>
         <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" style="max-width:80%;">
-            <img src="img\img3.jpg" class="img_home" alt="imagen3">
+            <img src="img\img3.jpg" class="img_home" alt="imagen3" style="max-width:80%;">
         </div>
         </center>
         <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" >
@@ -70,7 +70,7 @@
         </div>
         <center>
         <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" style="max-width:80%;">
-            <img src="img\img2.jpg" class="img_home" alt="imagen3">
+            <img src="img\img2.jpg" class="img_home" alt="imagen3" style="max-width:80%;">
         </div>
         </center>
     </div>
