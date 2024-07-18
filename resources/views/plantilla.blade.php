@@ -183,7 +183,7 @@
           <li>
           <a class="navbar-brand" href="/"><img style="width: 60px;height: 60px;" src={{ asset('img/logo.png') }} alt="logo"></a>
           </li>
-            <div>
+            <div class="me-auto">
             <form action="{{ route('buscar') }}" method="GET" class="d-flex col-lg-12 col-md-12" role="search">
               <input class="form-control me-2" type="search" name="buscar" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-search" type="submit">
