@@ -47,8 +47,7 @@
         <div class="col col-lg-6 col-md-12 col-12" id="col_home" >
             <p>Destacamos los beneficios tanto físicos como emocionales
                 que el contacto con la naturaleza y el cultivo de plantas
-                pueden aportar a las personas.
-                
+                pueden aportar a las personas.<br>
                 Este proyecto aspira a abordar estos desafíos al educar y
                 capacitar a las personas para que se conviertan en defensores
                 activos de la naturaleza y adopten prácticas más sostenibles
