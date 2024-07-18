@@ -27,7 +27,7 @@
     </button>
   </div>
   <div class="container">
-    <div class="row my-5 " id="top3">
+    <div class="row my-5" id="top3">
       <div class="col col-lg-6 col-sm-12 col-md-6 m-1">
         <h3>¡Las 3 plantas carnívoras más fascinantes para tu hogar!</h3>
         <p>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="row">
-        <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" style="max-width:100%;">
+        <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home">
             <img src="img\img3.jpg" class="img_home" alt="imagen3" style="max-width:90%;">
         </div>
         <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" >
@@ -66,11 +66,9 @@
                 cultivar y cuidar plantas en diversos entornos, desde jardines
                 urbanos hasta espacios interiores</p>
         </div>
-        <center>
-        <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home" style="max-width:100%;">
+        <div class="col col-lg-6 col-sm-12 col-md-12" id="col_home">
             <img src="img\img2.jpg" class="img_home" alt="imagen3" style="max-width:90%;">
         </div>
-        </center>
     </div>
   </div>
 @endsection
