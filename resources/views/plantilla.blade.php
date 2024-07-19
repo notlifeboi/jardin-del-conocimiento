@@ -26,6 +26,7 @@
             position: fixed;
             top: 0;
             left: -600px;
+            height: 100%;
             background-color: #ffff;
             color: black;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
