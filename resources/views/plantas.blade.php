@@ -119,27 +119,26 @@
                     </div>
                     @if(auth()->check())
                     @if(Auth::id() == $comment->user_id)
-                    <div>
-                        <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: none; width:100%">
+                    <!--EDITAR COMENTARIO-->
+                    <div class="comentarioEditarP">
+                        <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             @method('PUT')
-                            <div style="margin-left: 120px; display: flex; align-items: center;">
                             <input name="plantaid" value="{{$plantasinfo->id}}" type="hidden">
                             <textarea id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required>{{ $comment->content }}</textarea>
-                            <button id="botoncomentario" type="submit" style="border: none; border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
-                            </div>
+                            <button id="botoncomentario" type="submit" style="border: none; border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
                         </form>
                     </div>
                     @else
-                    <div>
-                        <form id="commentFormC{{$comment->id}}" action="{{ route('comments.reply', $comment) }}" method="POST"  style="display: none; width:100%">
+                    <div class="comentarioEditarPC">
+                        <form id="commentFormC{{$comment->id}}" action="{{ route('comments.reply', $comment) }}" method="POST"  style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             <input type="hidden" name="parent_id" value="{{ $comment->id }}">
                             <input name="plantaid" value="{{$plantasinfo->id}}" type="hidden">
-                            <div style="margin-left: 120px; display: flex; align-items: center;">
                                 <textarea name="content" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047" required></textarea>
                                 <button name="type" value='respuestaP' type="submit" style="border: none; border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
-                            </div>
                         </form>
                     </div>
                     @endif
@@ -176,27 +175,24 @@
                     </div>
                 </div>
                 @if(auth()->check())
+                <!--EDITAR RESPUESTA-->
                 @if(Auth::id() == $respuesta->user_id)
-                <div>
-                <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: none; width:100%">
+                <div class="respuestaEditarP">
+                <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             @method('PUT')
-                            <div style="margin-left: 140px; display: flex; align-items: center;">
                             <textarea id="textorespuesta" style="width: 100%; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required>{{ $respuesta->content }}</textarea>
                             <button id="botonrespuesta" type="submit" style="border: none; border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
-                            </div>
                         </form>    
                     </div>
                     @else
-                    <div>
-                        <form id="commentFormRC{{$respuesta->id}}" action="{{ route('comments.reply', $respuesta) }}" method="POST" style="display: none; width:100%">
+                    <div class="respuestaEditarPC">
+                        <form id="commentFormRC{{$respuesta->id}}" action="{{ route('comments.reply', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             <input type="hidden" name="parent_id" value="{{ $respuesta->id }}">
                             <input name="plantaid" value="{{$plantasinfo->id}}" type="hidden">
-                            <div style="margin-left: 140px; display: flex; align-items: center;">
                             <textarea style="width: 100%; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required></textarea>
                             <button name="type" value='respuestaP' type="submit"style="border: none; border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
-                        </div>
                         </form>
                     </div>
                     @endif
