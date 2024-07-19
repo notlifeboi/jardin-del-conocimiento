@@ -39,13 +39,6 @@
             left: 0px;
             }
 
-            #cerrarBtn {
-            position: relative;
-            margin-top: 10px;
-            margin-right: 10px;
-            margin-left: 560px;
-            }
-
             #cerrarBtn:hover {
             cursor: pointer;
             }
