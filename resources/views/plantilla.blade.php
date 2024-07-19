@@ -48,6 +48,8 @@
                 display: flex;
                 margin-bottom: 15px;
                 font-size:18px;
+                margin-left: 20px;
+                margin-right: 40px;
             }
 
             .comentario p{
@@ -298,8 +300,8 @@
                     <button type="submit" name="type" value='comentario' style="border: none; margin-left: 10px; border-radius: 100%; height:  width: 40px; background-color: #356047; color: white;"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
+          </div>
         </div>
-    </div>
 @endauth
 </li>
 <li>
