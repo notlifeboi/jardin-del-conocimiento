@@ -181,7 +181,7 @@
       <div style="background-color: #356047; width: 100%">
         <button style="margin-left:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">< Cerrar</button>
       </div>
-        <div id="listaComentarios" style="padding-top: 10px; width: auto; height: 81%; overflow-y: auto">
+        <div id="listaComentarios" style="padding-bottom: 100px; padding-top: 10px; width: auto; height: 100%; overflow-y: auto">
         @foreach($comments as $comment)
             <div>
                 @if($comment->type=='comentario')
