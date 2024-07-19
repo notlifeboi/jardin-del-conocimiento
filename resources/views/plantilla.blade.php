@@ -53,8 +53,10 @@
 
             @media (min-width: 992px) {
               .comentarioEditar{
-                width: 80%;
+                width: 75%;
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 margin-bottom: 15px;
                 font-size:18px;
                 margin-left: 110px;
