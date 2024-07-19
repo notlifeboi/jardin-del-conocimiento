@@ -69,7 +69,7 @@
                 align-items: center;
                 margin-bottom: 15px;
                 font-size:18px;
-                margin-left: 90px;
+                margin-left: 110px;
               }
 
               .respuestaEditar{
@@ -94,6 +94,12 @@
                 border: none;
               }
             }
+
+            .comentarioEditarC button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
 
             .comentario p{
                 word-wrap: break-word;
@@ -305,7 +311,7 @@
                         </form>
                     </div>
                     @else
-                    <button onclick="mostrarTextareaRC({{ $respuesta->id }})"><i class="fa-solid fa-reply"></i></button>
+                    <button onclick="mostrarTextAreaRC({{ $respuesta->id }})"><i class="fa-solid fa-reply"></i></button>
                     @endif
                     </div>
                     </div>
