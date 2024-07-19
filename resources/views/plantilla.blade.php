@@ -51,6 +51,40 @@
                 margin-right: 10px;
             }
 
+            @media (min-width: 992px) {
+              .comentarioEditar{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 110px;
+              }
+
+              .respuestaEditar{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 110px;
+              }
+
+              .comentarioEditar button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+
+              .respuestaEditar button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+            }
+
             .comentario p{
                 word-wrap: break-word;
                 overflow-wrap: break-word;
