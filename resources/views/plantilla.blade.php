@@ -241,7 +241,7 @@
                         </form>
                         </div>
                         @else
-                            <button onclick="mostrarTextareaC({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
+                            <button onclick="privado({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
                         @endif
                     </div>
                     </div>
@@ -252,8 +252,10 @@
                         <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
                             @csrf
                             @method('PUT')
+                            <div id="divprivado" hidden>
                             <textarea id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required>{{ $comment->content }}</textarea>
-                            <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
+                            <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil editar"></i></button>
+                            </div>
                         </form>
                     </div>
                     @else
@@ -433,6 +435,7 @@
   <script>
     var mostrarBtn = document.getElementById('mostrarBtn');
     var cerrarBtn = document.getElementById('cerrarBtn');
+    var divprivado = document.getElementById('divprivado');
     var contenedorLateral = document.getElementById('contenedorLateral');
     var textocomentario = document.getElementById('textocomentario');
     var botoncomentario = document.getElementById('botoncomentario');
@@ -444,6 +447,10 @@
     cerrarBtn.addEventListener('click', function() {
         contenedorLateral.classList.remove('abierto');
     });
+
+    function privado(commentId) {
+      divprivado.hidden = false ? true : false;
+    }
 
     function mostrarTextarea(commentId) {
         const form = document.getElementById('commentForm' + commentId);
