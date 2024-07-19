@@ -249,7 +249,7 @@
                             <p style="font-weight: bold;">{{ $respuesta->user->name }}</p>
                             <p class="ms-1" >respondió:</p>
                         </div>
-                        <div class="col col-lg-10 pe-3>
+                        <div class="col col-lg-10 pe-3">
                         <p class="mt-2">{{ $respuesta->content }}</p>
                         @if(Auth::id() == $respuesta->user_id)
                         <div style="display:flex">
