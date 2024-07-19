@@ -129,6 +129,9 @@
               color: white;
               padding: 0;
               cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
 
             li {
