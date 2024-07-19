@@ -82,7 +82,23 @@
                 margin-left: 110px;
               }
 
+              .respuestaEditarC{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 110px;
+              }
+
               .comentarioEditar button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+
+              .comentarioEditarC button{
                 padding: 0px;
                 background: none;
                 border: none;
@@ -93,13 +109,14 @@
                 background: none;
                 border: none;
               }
-            }
 
-            .comentarioEditarC button{
+              .respuestaEditarC button{
                 padding: 0px;
                 background: none;
                 border: none;
               }
+              }
+
 
             .comentario p{
                 word-wrap: break-word;
