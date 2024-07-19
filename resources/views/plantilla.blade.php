@@ -281,10 +281,8 @@
                         <form id="commentFormRC{{$respuesta->id}}" action="{{ route('comments.reply', $respuesta) }}" method="POST" style="display: none;">
                             @csrf
                             <input type="hidden" name="parent_id" value="{{ $respuesta->id }}">
-                            <div style="margin-left: 82px; display: flex; align-items: center;">
                             <textarea style="width: 350px; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required></textarea>
                             <button name="type" value='respuesta' type="submit"style="border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
-                        </div>
                         </form>
                     </div>
                     @endif
