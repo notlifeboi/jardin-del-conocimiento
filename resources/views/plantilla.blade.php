@@ -72,10 +72,8 @@
 
             .respuesta{
                 display: flex;
-                margin-left:60px;
                 margin-bottom: 15px;
                 font-size:18px;
-                width: 513px;
             }
 
             .respuesta p{
