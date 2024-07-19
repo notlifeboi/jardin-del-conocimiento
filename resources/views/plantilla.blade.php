@@ -21,7 +21,7 @@
             margin: 0;
             padding: 0;
             }
-            
+
             #contenedorLateral {
             position: fixed;
             top: 0;
@@ -49,6 +49,16 @@
                 font-size:18px;
                 margin-left: 15px;
                 margin-right: 10px;
+            }
+
+            @media (min-width: 992px) {
+              .comentarioEditar{
+                width: 80%;
+                display: flex;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 110px;
+              }
             }
 
             .comentario p{
@@ -129,9 +139,7 @@
               color: white;
               padding: 0;
               cursor: pointer;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+
             }
 
             li {
@@ -179,7 +187,7 @@
               </li>
               <li>
               @auth
-    <button class="mt-3 mb-3 me-5" id="mostrarBtn">Conversación</button>
+    <button class="mt-3 mb-3" id="mostrarBtn">Conversación</button>
     <div id="contenedorLateral" class="col col-lg-6 col-md-7 col-12" style="height: 100%">
       <div style="background-color: #356047; width: 100%">
         <button style="margin-left:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">< Cerrar</button>
@@ -215,7 +223,7 @@
                     </div>
                     </div>
                     @if(Auth::id() == $comment->user_id)
-                    <div class="comentario" style="width: 80%">
+                    <div class="comentarioEditar">
                         <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: none; width: 100%">
                             @csrf
                             @method('PUT')
