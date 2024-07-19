@@ -88,7 +88,6 @@
                 </div>
                 <button type="submit" class="btn btn-guardar w-100">Guardar cambios</button>
             </form>
-            </div>
         </div>
     </div>
     @endforeach
