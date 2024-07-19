@@ -233,7 +233,7 @@
                         <p class="mt-2">{{ $comment->content }}</p>
                         @if(Auth::id() == $comment->user_id)
                         <div style="display:flex">
-                        <button onclick="privado({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="privadoC({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $comment) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -287,7 +287,7 @@
                         <p class="mt-2">{{ $respuesta->content }}</p>
                         @if(Auth::id() == $respuesta->user_id)
                         <div style="display:flex">
-                        <button onclick="privado({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="privadoR({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $respuesta) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -449,7 +449,12 @@
         contenedorLateral.classList.remove('abierto');
     });
 
-    function privado(commentId) {
+    function privadoC(commentId) {
+      var divprivado = document.getElementById('privado');
+      divprivado.hidden = !divprivado.hidden;
+    }
+
+    function privadoR(respuestaId) {
       var divprivado = document.getElementById('privado');
       divprivado.hidden = !divprivado.hidden;
     }
