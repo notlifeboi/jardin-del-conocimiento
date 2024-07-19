@@ -447,7 +447,7 @@
 
     function mostrarTextarea(commentId) {
       textocomentario.hidden = !textocomentario.hidden;
-      botoncomentario.hidden = !botoncomentario.hidden
+      botoncomentario.hidden = !botoncomentario.hidden;
     }
 
     function mostrarTextareaR(respuestaId) {
