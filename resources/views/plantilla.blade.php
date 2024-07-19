@@ -231,6 +231,7 @@
                     </div>
                     </div>
                     @if(Auth::id() == $comment->user_id)
+                    <!--EDITAR COMENTARIO-->
                     <div class="comentarioEditar">
                         <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
                             @csrf
@@ -282,7 +283,7 @@
                     </div>
                 </div>
                 @if(Auth::id() == $respuesta->user_id)
-                //EDITAR RESPUESTA
+                <!--EDITAR RESPUESTA-->
                 <div class="respuesta">
                 <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: none;">
                             @csrf
