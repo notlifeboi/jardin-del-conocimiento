@@ -447,12 +447,12 @@
         contenedorLateral.classList.remove('abierto');
     });
 
-    function mostrarTextarea(commentId) {
+    function mostrarTextArea(commentId) {
         const form = document.getElementById('commentForm' + commentId);
         form.hidden = !form.hidden;
     }
 
-    function mostrarTextareaR(respuestaId) {
+    function mostrarTextAreaR(respuestaId) {
         const form = document.getElementById('commentFormR' + respuestaId);
         form.hidden = !form.hidden;
     }
