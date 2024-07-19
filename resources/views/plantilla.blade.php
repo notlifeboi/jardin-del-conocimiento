@@ -260,7 +260,7 @@
                     </div>
                     @else
                     <div class="comentario">
-                        <form id="commentFormC{{$comment->id}}" action="{{ route('comments.reply', $comment) }}" method="POST" style="display: none;">
+                        <form id="commentFormC{{$comment->id}}" action="{{ route('comments.reply', $comment) }}" method="POST">
                             @csrf
                             <input type="hidden" name="parent_id" value="{{ $comment->id }}">
                             <div style="margin-left: 102px; display: flex; align-items: center;">
