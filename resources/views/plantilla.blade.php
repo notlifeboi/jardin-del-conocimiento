@@ -187,8 +187,8 @@
               <li>
               @auth
     <button class="mt-3 mb-3 me-5" id="mostrarBtn">Conversación</button>
-    <div id="contenedorLateral">
-      <div style="background-color: #356047; width: 100%" class="col col-lg-12">
+    <div id="contenedorLateral" class="col col-lg-12">
+      <div style="background-color: #356047; width: 100%">
         <button style="margin-right:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">X</button>
       </div>
         <div id="listaComentarios" style="height: 80vh; overflow-y: auto">
