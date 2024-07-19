@@ -46,8 +46,6 @@
 
             .comentario{
                 display: flex;
-                margin-left:20px;
-                margin-right: 30px;
                 margin-bottom: 15px;
                 font-size:18px;
                 width: 523px;
