@@ -241,7 +241,7 @@
                         </form>
                         </div>
                         @else
-                            <button onclick="mostrarTextAreaR({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
+                            <button onclick="mostrarTextAreaC({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
                         @endif
                     </div>
                     </div>
