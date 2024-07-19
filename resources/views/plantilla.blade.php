@@ -295,8 +295,8 @@
         <div id="cajaComentario" style="width: 100%; height:auto; background-color: #356047; display: flex; align-items: center; justify-items: center; position: absolute; bottom: 0;">
             <form style="display: flex; justify-content: center; align-items: center; width: 100%;" action="{{ route('comments.store') }}" method="POST">
                 @csrf
-                    <textarea id="contenidoComentario" name="content" style="width: 85%; padding-left: 25px; border-radius: 10px; border: 2px solid #356047" placeholder="Escribe tu comentario aquí"></textarea>
-                    <button type="submit" name="type" value='comentario' style="border: none; margin-left: 10px; border-radius: 100%; height:  width: 40px; background-color: #356047; color: white;"><i class="fas fa-paper-plane"></i></button>
+                    <textarea id="contenidoComentario" name="content" style="width: 100%; padding-left: 25px; border-radius: 10px; border: 2px solid #356047" placeholder="Escribe tu comentario aquí"></textarea>
+                    <button type="submit" name="type" value='comentario' style="border: none; border-radius: 100%; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fas fa-paper-plane"></i></button>
             </form>
           </div>
         </div>
