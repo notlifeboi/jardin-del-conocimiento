@@ -449,7 +449,8 @@
     });
 
     function privado(commentId) {
-      divprivado.hidden = (false) ? true : true;
+      divprivado.hidden = false;
+      divprivado.hidden = true;
     }
 
     function mostrarTextarea(commentId) {
