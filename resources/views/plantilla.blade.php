@@ -333,6 +333,23 @@
     <div class="dropdown-usuario">
       
       <div>
+      <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Menú
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="/profile/{{ Auth::user()->id }}/edit">Editar perfil</a></li>
+        <li>
+            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Cerrar sesión') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </li>
+    </ul>
+</div>
+
         <p id="navbarDropdown" style="color:white;"class="dropdown-toggle ms-lg-5 mt-3 mb-3" role="button" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false" v-pre>{{ Auth::user()->name }}</p>
                                     <div class="dropdown">
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
