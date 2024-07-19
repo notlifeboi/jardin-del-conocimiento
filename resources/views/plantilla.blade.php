@@ -282,6 +282,7 @@
                     </div>
                 </div>
                 @if(Auth::id() == $respuesta->user_id)
+                //EDITAR RESPUESTA
                 <div class="respuesta">
                 <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: none;">
                             @csrf
@@ -436,7 +437,7 @@
 
     function mostrarTextareaR(respuestaId) {
         const form = document.getElementById('commentFormR' + respuestaId);
-        form.style.display = (form.style.display === 'none') ? 'block' : 'none';
+        form.style.display = (form.style.display === 'none') ? 'flex' : 'none';
     }
 
     function mostrarTextareaC(commentId) {
