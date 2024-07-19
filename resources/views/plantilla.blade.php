@@ -446,6 +446,10 @@
     });
 
     function mostrarTextarea(commentId) {
+
+      const textocomentario = document.getElementById('textocomentario');
+      const botoncomentario = document.getElementById('botoncomentario');
+
       textocomentario.hidden = !textocomentario.hidden;
       botoncomentario.hidden = !botoncomentario.hidden;
     }
