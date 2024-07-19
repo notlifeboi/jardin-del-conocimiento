@@ -103,7 +103,7 @@
                         @if(auth()->check())
                             @if(Auth::id() == $comment->user_id)
                         <div style="display:flex">
-                        <button onclick="mostrarTextarea({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="mostrarTextArea({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $comment) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -111,7 +111,7 @@
                         </form>
                         </div>
                         @else
-                            <button onclick="mostrarTextareaC({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
+                            <button onclick="mostrarTextAreaC({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
                         @endif
                     @endif
                     </div>
@@ -161,7 +161,7 @@
                         @if(auth()->check())
                         @if(Auth::id() == $respuesta->user_id)
                         <div style="display:flex">
-                        <button onclick="mostrarTextareaR({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="mostrarTextAreaR({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $respuesta) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -169,7 +169,7 @@
                         </form>
                     </div>
                     @else
-                    <button onclick="mostrarTextareaRC({{ $respuesta->id }})"><i class="fa-solid fa-reply"></i></button>
+                    <button onclick="mostrarTextAreaRC({{ $respuesta->id }})"><i class="fa-solid fa-reply"></i></button>
                     @endif
                     @endif
                     </div>
@@ -208,9 +208,4 @@
         @endforeach
         </div>
 </div>
-<script>
-  var div = document.getElementById("mostrarC");
-
-  div.onClick=
-  </script>
 @endsection
