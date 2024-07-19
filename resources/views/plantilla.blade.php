@@ -82,7 +82,7 @@
                 margin-left: 110px;
               }
 
-              .respuestaEditarC{
+              .respuestaEditarRC{
                 width: 75%;
                 display: flex;
                 justify-content: center;
@@ -110,7 +110,7 @@
                 border: none;
               }
 
-              .respuestaEditarC button{
+              .respuestaEditarRC button{
                 padding: 0px;
                 background: none;
                 border: none;
