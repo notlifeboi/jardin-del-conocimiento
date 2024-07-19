@@ -294,7 +294,7 @@
                 </div>
         @endforeach
         </div>
-        <div id="cajaComentario" style="background-color:  #356047; height: 12vh; display: flex; align-items: center; justify-items: center;" class="sticky-bottom">
+        <div id="cajaComentario" style="background-color:  #356047; display: flex; align-items: center; justify-items: center;" class="sticky-bottom">
             <form style="width: 100%" id="formularioComentario" action="{{ route('comments.store') }}" method="POST">
                 @csrf
                 <div style="display: flex; align-items: center;">
