@@ -62,6 +62,16 @@
                 margin-left: 110px;
               }
 
+              .comentarioEditarC{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 90px;
+              }
+
               .respuestaEditar{
                 width: 75%;
                 display: flex;
@@ -259,16 +269,14 @@
                         </form>
                     </div>
                     @else
-                    <div class="comentario">
-                        <form id="commentFormC{{$comment->id}}" action="{{ route('comments.reply', $comment) }}" method="POST">
+                    <div class="comentarioEditarC">
+                        <form id="commentFormC{{$comment->id}}" action="{{ route('comments.reply', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             <input type="hidden" name="parent_id" value="{{ $comment->id }}">
-                            <div style="margin-left: 102px; display: flex; align-items: center;">
-                                <textarea name="content" style="width: 350px; border-radius: 10px; padding-left: 25px; border: 2px solid #356047" required></textarea>
-                                <button name="type" value='respuesta' type="submit" style="border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;">
-                                  <i class="fa-solid fa-pencil"></i>
-                                </button>
-                            </div>
+                            <textarea name="content" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047" required></textarea>
+                            <button name="type" value='respuesta' type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
                         </form>
                     </div>
                     @endif
