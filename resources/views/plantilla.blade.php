@@ -253,7 +253,9 @@
                             @csrf
                             @method('PUT')
                             <textarea id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required>{{ $comment->content }} </textarea>
-                            <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil editar"></i></button>
+                            <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;">
+                              <i class="fa-solid fa-pencil editar"></i>
+                            </button>
                         </form>
                     </div>
                     @else
@@ -263,7 +265,9 @@
                             <input type="hidden" name="parent_id" value="{{ $comment->id }}">
                             <div style="margin-left: 102px; display: flex; align-items: center;">
                                 <textarea name="content" style="width: 350px; border-radius: 10px; padding-left: 25px; border: 2px solid #356047" required></textarea>
-                                <button name="type" value='respuesta' type="submit" style="border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
+                                <button name="type" value='respuesta' type="submit" style="border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;">
+                                  <i class="fa-solid fa-pencil editar"></i>
+                                </button>
                             </div>
                         </form>
                     </div>
