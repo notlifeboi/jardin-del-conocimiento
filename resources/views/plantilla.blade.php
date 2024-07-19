@@ -233,7 +233,7 @@
                         <p class="mt-2">{{ $comment->content }}</p>
                         @if(Auth::id() == $comment->user_id)
                         <div style="display:flex">
-                        <button onclick="privadoC({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="mostrarTextArea({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $comment) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -249,13 +249,11 @@
                     @if(Auth::id() == $comment->user_id)
                     <!--EDITAR COMENTARIO-->
                     <div class="comentarioEditar">
-                        <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
+                        <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             @method('PUT')
-                            <div id="privado" style="width: 100%; display: flex; align-items:center;" hidden>
                             <textarea id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required>{{ $comment->content }} </textarea>
                             <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil editar"></i></button>
-                            </div>
                         </form>
                     </div>
                     @else
@@ -287,7 +285,7 @@
                         <p class="mt-2">{{ $respuesta->content }}</p>
                         @if(Auth::id() == $respuesta->user_id)
                         <div style="display:flex">
-                        <button onclick="privadoR({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="mostrarTextAreaR({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $respuesta) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -449,24 +447,14 @@
         contenedorLateral.classList.remove('abierto');
     });
 
-    function privadoC(commentId) {
-      var divprivado = document.getElementById('privado');
-      divprivado.hidden = !divprivado.hidden;
-    }
-
-    function privadoR(respuestaId) {
-      var divprivado = document.getElementById('privado');
-      divprivado.hidden = !divprivado.hidden;
-    }
-
     function mostrarTextarea(commentId) {
         const form = document.getElementById('commentForm' + commentId);
-        form.style.display = (form.style.display === 'none') ? 'flex' : 'none';
+        form.hidden = !form.hidden;
     }
 
     function mostrarTextareaR(respuestaId) {
         const form = document.getElementById('commentFormR' + respuestaId);
-        form.style.display = (form.style.display === 'none') ? 'flex' : 'none';
+        form.hidden = !form.hidden;
     }
 
     function mostrarTextareaC(commentId) {
