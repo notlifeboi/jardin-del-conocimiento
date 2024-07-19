@@ -180,7 +180,7 @@
     <button class="mt-3 mb-3 me-5" id="mostrarBtn">Conversación</button>
     <div id="contenedorLateral" class="col col-lg-6 col-md-7 col-12">
       <div style="background-color: #356047; width: 100%">
-        <button style="margin-right:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">X</button>
+        <button style="margin-right:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">  < Cerrar</button>
       </div>
         <div id="listaComentarios" style="height: 80vh; overflow-y: auto">
         @foreach($comments as $comment)
