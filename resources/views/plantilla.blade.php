@@ -469,12 +469,12 @@
         form.hidden = !form.hidden;
     }
 
-    function mostrarTextareaC(commentId) {
+    function mostrarTextAreaC(commentId) {
         const form = document.getElementById('commentFormC' + commentId);
         form.hidden = !form.hidden;
     }
 
-    function mostrarTextareaRC(commentId) {
+    function mostrarTextAreaRC(commentId) {
         const form = document.getElementById('commentFormRC' + commentId);
         form.hidden = !form.hidden;
     }
