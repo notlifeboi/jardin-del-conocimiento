@@ -233,7 +233,7 @@
                         <p class="mt-2">{{ $comment->content }}</p>
                         @if(Auth::id() == $comment->user_id)
                         <div style="display:flex">
-                        <button onclick="mostrarTextArea({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="privado({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $comment) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -252,8 +252,10 @@
                         <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
                             @csrf
                             @method('PUT')
+                            <div id="privado" hidden>
                             <textarea id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required hidden>{{ $comment->content }} </textarea>
                             <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;" hidden><i class="fa-solid fa-pencil editar"></i></button>
+                            </div>
                         </form>
                     </div>
                     @else
@@ -433,6 +435,7 @@
   <script>
     var mostrarBtn = document.getElementById('mostrarBtn');
     var cerrarBtn = document.getElementById('cerrarBtn');
+    var divprivado = document.getElementById('privado');
     var contenedorLateral = document.getElementById('contenedorLateral');
     var textocomentario = document.getElementById('textocomentario');
     var botoncomentario = document.getElementById('botoncomentario');
@@ -445,13 +448,13 @@
         contenedorLateral.classList.remove('abierto');
     });
 
+    function privado(commentId) {
+      divPrivado.hidden = !divPrivado.hidden;
+    }
+
     function mostrarTextarea(commentId) {
-
-      const textocomentario = document.getElementById('textocomentario');
-      const botoncomentario = document.getElementById('botoncomentario');
-
-      textocomentario.hidden = !textocomentario.hidden;
-      botoncomentario.hidden = !botoncomentario.hidden;
+        const form = document.getElementById('commentForm' + commentId);
+        form.style.display = (form.style.display === 'none') ? 'flex' : 'none';
     }
 
     function mostrarTextareaR(respuestaId) {
