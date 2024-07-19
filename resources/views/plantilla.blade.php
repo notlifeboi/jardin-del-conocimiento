@@ -33,7 +33,7 @@
             transition: left 0.3s;
             z-index: 999;
             border-right: 5px solid #356047;
-            border-bottom: 90px solid #356047;
+            border-bottom: 5px solid #356047;
             }
 
             #contenedorLateral.abierto {
