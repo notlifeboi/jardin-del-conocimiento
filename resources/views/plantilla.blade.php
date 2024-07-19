@@ -291,7 +291,6 @@
             @endforeach
                 </div>
         @endforeach
-        </div>
         <div id="cajaComentario" style="height: 12vh; display: flex; align-items: center;">
             <form style="width: 100%" id="formularioComentario" action="{{ route('comments.store') }}" method="POST">
                 @csrf
@@ -301,6 +300,10 @@
                 </div>
             </form>
         </div>
+        </div>
+        <!--
+        acá va todo el cajaComentario
+        -->
     </div>
 @endauth
 </li>
