@@ -125,7 +125,7 @@
                 align-items: center;
                 margin-bottom: 15px;
                 font-size:18px;
-                margin-left: 50px;
+                margin-left: 25px;
               }
 
               .comentarioEditarC{
@@ -135,7 +135,7 @@
                 align-items: center;
                 margin-bottom: 15px;
                 font-size:18px;
-                margin-left: 50px;
+                margin-left: 25px;
               }
 
               .respuestaEditar{
@@ -145,7 +145,7 @@
                 align-items: center;
                 margin-bottom: 15px;
                 font-size:18px;
-                margin-left: 50px;
+                margin-left: 25px;
               }
 
               .respuestaEditarRC{
@@ -155,7 +155,7 @@
                 align-items: center;
                 margin-bottom: 15px;
                 font-size:18px;
-                margin-left: 50px;
+                margin-left: 25px;
               }
 
               .comentarioEditar button{
