@@ -62,7 +62,23 @@
                 margin-left: 110px;
               }
 
+              .respuestaEditar{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 110px;
+              }
+
               .comentarioEditar button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+
+              .respuestaEditar button{
                 padding: 0px;
                 background: none;
                 border: none;
@@ -284,14 +300,12 @@
                 </div>
                 @if(Auth::id() == $respuesta->user_id)
                 <!--EDITAR RESPUESTA-->
-                <div class="respuesta">
-                <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: none;">
+                <div class="respuestaEditar">
+                <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
                             @csrf
                             @method('PUT')
-                            <div style="margin-left: 82px; display: flex; align-items: center;">
-                            <textarea id="textorespuesta" style="width: 350px; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required>{{ $respuesta->content }}</textarea>
-                            <button id="botonrespuesta" type="submit" style="border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
-                            </div>
+                            <textarea id="textorespuesta" style="width: 100%; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required>{{ $respuesta->content }}</textarea>
+                            <button id="botonrespuesta" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"></i></button>
                         </form>    
                     </div>
                     @else
