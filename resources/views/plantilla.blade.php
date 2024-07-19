@@ -187,7 +187,7 @@
             <div>
                 @if($comment->type=='comentario')
                 <div class="comentario">
-                    <div style="display: flex; align-items: center; align-content: center; margin-right: 12px">
+                    <div style="display: flex; align-items: center; align-content: flex-start; margin-right: 12px">
                         <img style="width: 80px; height: 80px; object-fit: cover; border-radius: 100%;" src="{{$comment->user->picture}}" alt="foto">
                         </div>
                         <div>
