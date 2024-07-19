@@ -115,8 +115,73 @@
                 background: none;
                 border: none;
               }
+            }
+
+            @media (max-width: 992px) {
+              .comentarioEditar{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 20px;
               }
 
+              .comentarioEditarC{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 20px;
+              }
+
+              .respuestaEditar{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 20px;
+              }
+
+              .respuestaEditarRC{
+                width: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size:18px;
+                margin-left: 20px;
+              }
+
+              .comentarioEditar button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+
+              .comentarioEditarC button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+
+              .respuestaEditar button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+
+              .respuestaEditarRC button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
+            }
 
             .comentario p{
                 word-wrap: break-word;
