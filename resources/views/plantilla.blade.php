@@ -433,7 +433,6 @@
   <script>
     var mostrarBtn = document.getElementById('mostrarBtn');
     var cerrarBtn = document.getElementById('cerrarBtn');
-    var divprivado = document.getElementsByClassName('privado');
     var contenedorLateral = document.getElementById('contenedorLateral');
     var textocomentario = document.getElementById('textocomentario');
     var botoncomentario = document.getElementById('botoncomentario');
@@ -447,7 +446,8 @@
     });
 
     function mostrarTextarea(commentId) {
-      textocomentario.hidden = botoncomentario.hidden;
+      textocomentario.hidden = !textocomentario.hidden;
+      botoncomentario.hidden = !botoncomentario.hidden
     }
 
     function mostrarTextareaR(respuestaId) {
