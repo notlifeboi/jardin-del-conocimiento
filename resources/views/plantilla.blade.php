@@ -178,7 +178,7 @@
       <div style="background-color: #356047; width: 100%">
         <button style="margin-left:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">< Cerrar</button>
       </div>
-        <div id="listaComentarios" style="width: auto; height: 100%; overflow-y: auto">
+        <div id="listaComentarios" style="width: auto; height: 92%; overflow-y: auto">
         @foreach($comments as $comment)
             <div>
                 @if($comment->type=='comentario')
@@ -293,15 +293,12 @@
             <form style="width: 100%" id="formularioComentario" action="{{ route('comments.store') }}" method="POST">
                 @csrf
                 <div style="display: flex; align-items: center;">
-                    <textarea id="contenidoComentario" name="content" style="width: 85%; margin-left: 20px; padding-left: 25px; border-radius: 10px; border: 2px solid #356047" placeholder="Escribe tu comentario aquí"></textarea>
-                    <button type="submit" name="type" value='comentario' style="border: none; margin-left: 10px; border-radius: 100%; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fas fa-paper-plane"></i></button>
+                    <textarea id="contenidoComentario" name="content" style="width: 85%; padding-left: 25px; border-radius: 10px; border: 2px solid #356047" placeholder="Escribe tu comentario aquí"></textarea>
+                    <button type="submit" name="type" value='comentario' style="border: none; margin-left: 10px; border-radius: 100%; height:  width: 40px; background-color: #356047; color: white;"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
         </div>
         </div>
-        <!--
-        acá va todo el cajaComentario
-        -->
     </div>
 @endauth
 </li>
