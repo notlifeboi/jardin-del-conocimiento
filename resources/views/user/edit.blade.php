@@ -56,6 +56,7 @@
     @foreach ($editarPerfil as $editar)
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="container-custom text-center">
+            <div class="col">
             <form action="/profile/{{ $editar->id }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
                 @csrf
@@ -87,6 +88,7 @@
                 </div>
                 <button type="submit" class="btn btn-guardar w-100">Guardar cambios</button>
             </form>
+            </div>
         </div>
     </div>
     @endforeach
