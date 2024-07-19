@@ -79,7 +79,7 @@
                 </p>
         </div>
     </div>
-    <div class="row my-2 mb-5">
+    <div class="row my-2 mb-5 mt-4">
         <div class="direccion col col-lg-6 col-md-12 col-12">
                 <p>
                 Surgimos como una respuesta a la necesidad de reconectar a
