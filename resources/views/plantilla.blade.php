@@ -241,7 +241,7 @@
                         </form>
                         </div>
                         @else
-                            <button onclick="mostrarTextArea({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
+                            <button onclick="mostrarTextAreaR({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
                         @endif
                     </div>
                     </div>
@@ -287,7 +287,7 @@
                         <p class="mt-2">{{ $respuesta->content }}</p>
                         @if(Auth::id() == $respuesta->user_id)
                         <div style="display:flex">
-                        <button onclick="mostrarTextareaR({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="privado({{ $respuesta->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $respuesta) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -306,8 +306,10 @@
                 <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
                             @csrf
                             @method('PUT')
+                            <div id="privado" style="width: 100%; display: flex; align-items:center;" hidden>
                             <textarea id="textorespuesta" style="width: 100%; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required>{{ $respuesta->content }}</textarea>
                             <button id="botonrespuesta" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"></i></button>
+                            </div>
                         </form>    
                     </div>
                     @else
