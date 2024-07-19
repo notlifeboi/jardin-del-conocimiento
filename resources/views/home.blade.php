@@ -60,7 +60,7 @@
         <a href="/top3"><button style="font-family: 'italic';"class="btn btn-outline-success col-12 m-1">ver mas</button></a>
       </div>
     <div class="col col-lg-6 col-md-12 col-12" id="col_home">
-      <img src="img/categorias/Carnivoras.jpg" class="img_home" alt="imagen1" style="width: 100%; height: 100%; object-fit: cover;">
+      <img src="img/categorias/Carnivoras.jpg" class="img_home" alt="imagen1" style="width: 100%; height: 330px;">
     </div>
     </div>
     <div class="row">
