@@ -178,11 +178,11 @@
               <li>
               @auth
     <button class="mt-3 mb-3 me-5" id="mostrarBtn">Conversación</button>
-    <div id="contenedorLateral" class="col col-lg-6 col-md-7 col-12" style="max-height: 100%">
+    <div id="contenedorLateral" class="col col-lg-6 col-md-7 col-12" style="height: 100%">
       <div style="background-color: #356047; width: 100%">
         <button style="margin-left:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">< Cerrar</button>
       </div>
-        <div id="listaComentarios" style="width: auto; height: 82vh; overflow-y: auto">
+        <div id="listaComentarios" style="width: auto; height: 100%; overflow-y: auto">
         @foreach($comments as $comment)
             <div>
                 @if($comment->type=='comentario')
@@ -294,7 +294,7 @@
                 </div>
         @endforeach
         </div>
-        <div id="cajaComentario" style="background-color:  #356047; display: flex; align-items: center; justify-items: center;" class="sticky-bottom">
+        <div id="cajaComentario" style="height: auto; background-color: #356047; display: flex; align-items: center; justify-items: center;" class="sticky-bottom">
             <form style="width: 100%" id="formularioComentario" action="{{ route('comments.store') }}" method="POST">
                 @csrf
                 <div style="display: flex; align-items: center; height: auto">
