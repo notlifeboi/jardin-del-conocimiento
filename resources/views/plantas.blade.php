@@ -2,6 +2,7 @@
 @section('estilo')
 <link rel="stylesheet" href="{{ asset('css/planta.css') }}">
 <style>
+
     #botonEditar{
         background-color: #6A994E;
         color: white;
@@ -177,7 +178,7 @@
                 @if(auth()->check())
                 <!--EDITAR RESPUESTA-->
                 @if(Auth::id() == $respuesta->user_id)
-                <div class="respuestaEditarP">
+                <div class="respuestaEditarP ms-4">
                 <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             @method('PUT')
