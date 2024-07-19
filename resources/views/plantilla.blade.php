@@ -33,7 +33,7 @@
             transition: left 0.3s;
             z-index: 999;
             border-right: 5px solid #356047;
-            border-bottom: 5px solid #356047;
+            border-bottom: 90px solid #356047;
             }
 
             #contenedorLateral.abierto {
@@ -187,7 +187,7 @@
             <div>
                 @if($comment->type=='comentario')
                 <div class="comentario">
-                    <div style="display: flex; align-items: center; align-content: flex-start; margin-right: 12px">
+                    <div style="display: flex; align-items: center; align-items: flex-start; margin-right: 12px">
                         <img style="width: 80px; height: 80px; object-fit: cover; border-radius: 100%;" src="{{$comment->user->picture}}" alt="foto">
                         </div>
                         <div>
@@ -240,7 +240,7 @@
                 <div>
                   @if($respuesta->type=='respuesta')
                 <div class="respuesta">
-                    <div style="display: flex; align-items: center; align-content: flex-start; margin-right: 12px">
+                    <div style="display: flex; align-items: center; align-items: flex-start; margin-right: 12px">
                     <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 100%;" src="{{$respuesta->user->picture}}" alt="foto">
                     </div>
                     <div>
