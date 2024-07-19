@@ -96,7 +96,7 @@
         <div class="row mb-3">
             <div class="col">
                 <h7>
-                    <a href="/categorias/2">Consulta mas informacion aca...</a>
+                    <a href="/categorias/4">Consulta mas informacion aca...</a>
                 </h7>
         </div>
     </div>
