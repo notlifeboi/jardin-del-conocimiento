@@ -3,10 +3,16 @@
 <style>
   @media (min-width: 992px) {
     .direccion{
+      align-items: 
       font-size: 20px;
       font-family: 'regular';
       text-align: justify;
       direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      height: 100%;
     }
   }
 
@@ -17,7 +23,7 @@
       text-align: justify;
       direction: ltr;
     }
-  }"
+  }
 </style>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
