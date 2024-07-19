@@ -8,11 +8,6 @@
       font-family: 'regular';
       text-align: justify;
       direction: rtl;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center; 
-      height: 100%;
     }
   }
 
@@ -69,6 +64,7 @@
         <div class="col col-lg-6 col-md-12 col-12" id="col_home">
           <img src="img\img3.jpg" class="img_home" alt="imagen2" style="max-width:90%;">
         </div>
+        <center>
         <div style="text-align: justify" class="col col-lg-6 col-md-12 col-12" id="col_home">
                 <p>
                 Destacamos los beneficios tanto físicos como emocionales
@@ -80,6 +76,7 @@
                 en sus vidas diarias.
                 </p>
         </div>
+        </center>
     </div>
     <div class="row my-2 mb-5">
         <div class="direccion col col-lg-6 col-md-12 col-12">

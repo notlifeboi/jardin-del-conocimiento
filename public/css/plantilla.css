@@ -10,7 +10,7 @@ body{
 }
 
 #col_home{
-    display: flex; 
+  display: flex; 
   align-items: center; 
   justify-content: center;
   text-align: center;
