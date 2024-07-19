@@ -301,13 +301,11 @@
                 @if(Auth::id() == $respuesta->user_id)
                 <!--EDITAR RESPUESTA-->
                 <div class="respuestaEditar">
-                <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
+                <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             @method('PUT')
-                            <div id="privado" style="width: 100%; display: flex; align-items:center;" hidden>
                             <textarea id="textorespuesta" style="width: 100%; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required>{{ $respuesta->content }}</textarea>
                             <button id="botonrespuesta" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"></i></button>
-                            </div>
                         </form>    
                     </div>
                     @else
