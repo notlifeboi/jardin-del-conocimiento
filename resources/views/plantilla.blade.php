@@ -449,7 +449,7 @@
 
     function privado(commentId) {
       var divprivado = document.getElementById('privado');
-      divPrivado.hidden = !divPrivado.hidden;
+      divprivado.hidden = !divprivado.hidden;
     }
 
     function mostrarTextarea(commentId) {
