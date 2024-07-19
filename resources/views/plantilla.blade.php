@@ -166,7 +166,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
           <li>
-          <a class="navbar-brand" style="padding-left: 0px;" href="/"><img style="width: 60px;height: 60px;" src={{ asset('img/logo.png') }} alt="logo"></a>
+          <a class="navbar-brand" href="/"><img style="width: 60px; height: 60px; margin-left: -10px;" src={{ asset('img/logo.png') }} alt="logo"></a>
           </li>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span> 
