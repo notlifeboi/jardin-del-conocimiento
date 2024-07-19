@@ -293,7 +293,6 @@
             @endforeach
                 </div>
         @endforeach
-        </div>
         <div id="cajaComentario" style="height:auto; background-color: #356047; display: flex; align-items: center; justify-items: center; position: fixed; bottom: 0;">
             <form style="width: 100%" id="formularioComentario" action="{{ route('comments.store') }}" method="POST">
                 @csrf
@@ -301,6 +300,7 @@
                     <button type="submit" name="type" value='comentario' style="border: none; margin-left: 10px; border-radius: 100%; height:  width: 40px; background-color: #356047; color: white;"><i class="fas fa-paper-plane"></i></button>
             </form>
           </div>
+        </div>
         </div>
 @endauth
 </li>
