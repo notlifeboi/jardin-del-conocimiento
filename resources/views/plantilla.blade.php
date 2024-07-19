@@ -240,7 +240,7 @@
                 <div>
                   @if($respuesta->type=='respuesta')
                 <div class="respuesta">
-                    <div style="display: flex; align-items: center; align-content: center; margin-right: 12px">
+                    <div style="display: flex; align-items: center; align-content: flex-start; margin-right: 12px">
                     <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 100%;" src="{{$respuesta->user->picture}}" alt="foto">
                     </div>
                     <div>
