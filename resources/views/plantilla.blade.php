@@ -33,7 +33,6 @@
             transition: left 0.3s;
             z-index: 999;
             border-right: 5px solid #356047;
-            border-bottom: 5px solid #356047;
             }
 
             #contenedorLateral.abierto {
@@ -293,7 +292,7 @@
             @endforeach
                 </div>
         @endforeach
-        <div id="cajaComentario" style="height:auto; background-color: #356047; display: flex; align-items: center; justify-items: center; position: fixed; bottom: 0;">
+        <div id="cajaComentario" style="width: 100%; height:auto; background-color: #356047; display: flex; align-items: center; justify-items: center; position: absolute; bottom: 0;">
             <form style="width: 100%" id="formularioComentario" action="{{ route('comments.store') }}" method="POST">
                 @csrf
                     <textarea id="contenidoComentario" name="content" style="width: 85%; padding-left: 25px; border-radius: 10px; border: 2px solid #356047" placeholder="Escribe tu comentario aquí"></textarea>
@@ -301,7 +300,7 @@
             </form>
           </div>
         </div>
-        </div>
+    </div>
 @endauth
 </li>
 <li>
