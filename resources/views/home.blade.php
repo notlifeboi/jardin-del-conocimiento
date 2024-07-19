@@ -3,7 +3,10 @@
 <style>
   @media (min-width: 992px) {
     .direccion{
-      align-items: 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      text-align: center;
       font-size: 20px;
       font-family: 'regular';
       text-align: justify;
@@ -64,7 +67,6 @@
         <div class="col col-lg-6 col-md-12 col-12" id="col_home">
           <img src="img\img3.jpg" class="img_home" alt="imagen2" style="max-width:90%;">
         </div>
-        <center>
         <div style="text-align: justify" class="col col-lg-6 col-md-12 col-12" id="col_home">
                 <p>
                 Destacamos los beneficios tanto físicos como emocionales
@@ -76,7 +78,6 @@
                 en sus vidas diarias.
                 </p>
         </div>
-        </center>
     </div>
     <div class="row my-2 mb-5">
         <div class="direccion col col-lg-6 col-md-12 col-12">
