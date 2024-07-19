@@ -50,7 +50,7 @@
   </a>
 </div>
   <div class="container">
-    <div class="row my-5" id="top3">
+    <div class="row mb-5 mt-3" id="top3">
       <div class="col col-lg-6 col-md-12 col-12">
         <h3 style="text-align: justify">¡Las 3 plantas carnívoras más fascinantes para tu hogar!</h3>
         <p style="text-align: justify">
@@ -79,7 +79,7 @@
                 </p>
         </div>
     </div>
-    <div class="row my-2 mb-5 mt-4">
+    <div class="row my-2 mb-5 mt-0 mt-lg-4 mt-md-4">
         <div class="direccion col col-lg-6 col-md-12 col-12">
                 <p>
                 Surgimos como una respuesta a la necesidad de reconectar a
