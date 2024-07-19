@@ -252,10 +252,8 @@
                         <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: flex; align-items: center; width: 100%;">
                             @csrf
                             @method('PUT')
-                            <div id="divprivado" hidden>
-                            <textarea id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required>{{ $comment->content }}</textarea>
-                            <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil editar"></i></button>
-                            </div>
+                            <textarea class="privado" id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required hidden>{{ $comment->content }} </textarea>
+                            <button class="privado" id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;" hidden><i class="fa-solid fa-pencil editar"></i></button>
                         </form>
                     </div>
                     @else
@@ -435,7 +433,7 @@
   <script>
     var mostrarBtn = document.getElementById('mostrarBtn');
     var cerrarBtn = document.getElementById('cerrarBtn');
-    var divprivado = document.getElementById('divprivado');
+    var divprivado = document.getElementsByClassName('privado');
     var contenedorLateral = document.getElementById('contenedorLateral');
     var textocomentario = document.getElementById('textocomentario');
     var botoncomentario = document.getElementById('botoncomentario');
