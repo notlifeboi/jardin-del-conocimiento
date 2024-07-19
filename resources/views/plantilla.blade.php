@@ -213,10 +213,10 @@
                     </div>
                     @if(Auth::id() == $comment->user_id)
                     <div class="comentario" style="width: 80%">
-                        <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: none;">
+                        <form id="commentForm{{$comment->id}}" action="{{ route('comments.update', $comment) }}" method="POST" style="display: none; width: 100%">
                             @csrf
                             @method('PUT')
-                            <textarea id="textocomentario" style="width: 350px; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required>{{ $comment->content }}</textarea>
+                            <textarea id="textocomentario" style="width: 100%; border-radius: 10px; padding-left: 25px; border: 2px solid #356047;" name="content" required>{{ $comment->content }}</textarea>
                             <button id="botoncomentario" type="submit" style="border-radius: 100%; margin-left:20px; height: 40px; width: 40px; background-color: #356047; color: white;"><i class="fa-solid fa-pencil"></i></button>
                         </form>
                     </div>
