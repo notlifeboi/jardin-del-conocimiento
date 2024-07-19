@@ -48,8 +48,8 @@
                 display: flex;
                 margin-bottom: 15px;
                 font-size:18px;
-                margin-left: 20px;
-                margin-right: 40px;
+                margin-left: 15px;
+                margin-right: 10px;
             }
 
             .comentario p{
@@ -76,6 +76,8 @@
                 display: flex;
                 margin-bottom: 15px;
                 font-size:18px;
+                margin-left: 30px;
+                margin-right: 10px;
             }
 
             .respuesta p{
