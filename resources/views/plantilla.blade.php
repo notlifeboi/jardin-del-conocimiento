@@ -48,7 +48,6 @@
                 display: flex;
                 margin-bottom: 15px;
                 font-size:18px;
-                width: 523px;
             }
 
             .comentario p{
