@@ -52,8 +52,8 @@
   <div class="container">
     <div class="row my-5" id="top3">
       <div class="col col-lg-6 col-md-12 col-12">
-        <h3>¡Las 3 plantas carnívoras más fascinantes para tu hogar!</h3>
-        <p>
+        <h3 style="text-align: justify">¡Las 3 plantas carnívoras más fascinantes para tu hogar!</h3>
+        <p style="text-align: justify">
           Las plantas carnívoras no solo son llamativas y exóticas, sino que también son un recordatorio del ingenio de la naturaleza. Atraen y digieren insectos para obtener nutrientes, lo que las convierte en una adición única a cualquier hogar.
           A continuación, te presentamos 3 de las plantas carnívoras más fascinantes que puedes cultivar:
         </p>
