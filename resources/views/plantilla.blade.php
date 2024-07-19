@@ -435,7 +435,6 @@
   <script>
     var mostrarBtn = document.getElementById('mostrarBtn');
     var cerrarBtn = document.getElementById('cerrarBtn');
-    var divprivado = document.getElementById('privado');
     var contenedorLateral = document.getElementById('contenedorLateral');
     var textocomentario = document.getElementById('textocomentario');
     var botoncomentario = document.getElementById('botoncomentario');
@@ -449,6 +448,7 @@
     });
 
     function privado(commentId) {
+      var divprivado = document.getElementById('privado');
       divPrivado.hidden = !divPrivado.hidden;
     }
 
