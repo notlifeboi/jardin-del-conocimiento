@@ -183,7 +183,7 @@
       <div style="background-color: #356047; width: 100%">
         <button style="margin-left:10px; margin-top:5px; color: white; border: none; font-weight: bold; background: transparent;" id="cerrarBtn">< Cerrar</button>
       </div>
-        <div id="listaComentarios" style="height: 100vh; overflow-y: auto">
+        <div id="listaComentarios" style="width: auto; height: auto; overflow-y: auto">
         @foreach($comments as $comment)
             <div>
                 @if($comment->type=='comentario')
@@ -196,7 +196,7 @@
                             <p style="font-weight: bold;">{{ $comment->user->name }}</p>
                             <p class="ms-1" >dice:</p>
                         </div>
-                        <div class="col col-lg-10 pe-3">
+                        <div>
                         <p class="mt-2">{{ $comment->content }}</p>
                         @if(Auth::id() == $comment->user_id)
                         <div style="display:flex">
@@ -249,7 +249,7 @@
                             <p style="font-weight: bold;">{{ $respuesta->user->name }}</p>
                             <p class="ms-1" >respondió:</p>
                         </div>
-                        <div class="col col-lg-10 pe-3">
+                        <div>
                         <p class="mt-2">{{ $respuesta->content }}</p>
                         @if(Auth::id() == $respuesta->user_id)
                         <div style="display:flex">
