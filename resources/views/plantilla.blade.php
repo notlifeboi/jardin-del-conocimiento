@@ -196,7 +196,7 @@
                             <p style="font-weight: bold;">{{ $comment->user->name }}</p>
                             <p class="ms-1" >dice:</p>
                         </div>
-                        <div>
+                        <div class="col col-lg-10 pe-3">
                         <p class="mt-2">{{ $comment->content }}</p>
                         @if(Auth::id() == $comment->user_id)
                         <div style="display:flex">
