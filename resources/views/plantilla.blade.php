@@ -59,6 +59,12 @@
                 font-size:18px;
                 margin-left: 110px;
               }
+
+              .comentarioEditar button{
+                padding: 0px;
+                background: none;
+                border: none;
+              }
             }
 
             .comentario p{
