@@ -233,7 +233,7 @@
                         <p class="mt-2">{{ $comment->content }}</p>
                         @if(Auth::id() == $comment->user_id)
                         <div style="display:flex">
-                        <button onclick="mostrarTextarea({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
+                        <button onclick="privado({{ $comment->id }})"><i class="fa-solid fa-pen-to-square" style="margin-right:7px;"></i></button>
                         <form action="{{ route('comments.delete', $comment) }}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -241,7 +241,7 @@
                         </form>
                         </div>
                         @else
-                            <button onclick="privado({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
+                            <button onclick="mostrarTextArea({{ $comment->id }})"><i class="fa-solid fa-reply"></i></button>
                         @endif
                     </div>
                     </div>
