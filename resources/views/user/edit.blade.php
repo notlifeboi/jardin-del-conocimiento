@@ -1,4 +1,4 @@
-@extends ('plantilla')
+@extends('plantilla')
 @section('contenido')
 <!DOCTYPE html>
 <html lang="en">
