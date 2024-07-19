@@ -178,7 +178,7 @@
                 @if(auth()->check())
                 <!--EDITAR RESPUESTA-->
                 @if(Auth::id() == $respuesta->user_id)
-                <div class="respuestaEditarP ms-4">
+                <div class="respuestaEditarP">
                 <form id="commentFormR{{$respuesta->id}}" action="{{ route('comments.update', $respuesta) }}" method="POST" style="display: flex; align-items: center; width: 100%;" hidden>
                             @csrf
                             @method('PUT')
