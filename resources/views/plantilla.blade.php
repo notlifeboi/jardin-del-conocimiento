@@ -309,7 +309,9 @@
                             @csrf
                             @method('PUT')
                             <textarea id="textorespuesta" style="width: 100%; border-radius: 10px; padding-left:25px; border: 2px solid #356047;" name="content" required>{{ $respuesta->content }}</textarea>
-                            <button id="botonrespuesta" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;"></i></button>
+                            <button id="botonrespuesta" type="submit" style="border-radius: 100%; margin-left:10px; height: 40px; width: 40px; background-color: #356047; color: white;">
+                              <i class="fa-solid fa-pencil editar">
+                            </button>
                         </form>    
                     </div>
                     @else
