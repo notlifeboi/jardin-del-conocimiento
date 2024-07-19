@@ -60,14 +60,14 @@
         <a href="/top3"><button style="font-family: 'italic';"class="btn btn-outline-success col-12 m-1">ver mas</button></a>
       </div>
     <div class="col col-lg-6 col-md-12 col-12" id="col_home">
-      <img src="img/categorias/Carnivoras.jpg" class="img_home" alt="imagen1" style="width: 100%; max-height: 330px;">
+      <img src="img/categorias/Carnivoras.jpg" class="img_home mt-lg-0 mt-md-0 mt-3" alt="imagen1" style="width: 100%; max-height: 330px;">
     </div>
     </div>
     <div class="row">
         <div class="col col-lg-6 col-md-12 col-12" id="col_home">
           <img src="img\img3.jpg" class="img_home" alt="imagen2" style="max-width:90%;">
         </div>
-        <div style="text-align: justify" class="col col-lg-6 col-md-12 col-12" id="col_home">
+        <div style="text-align: justify" class="col col-lg-6 col-md-12 col-12 mt-lg-0 mt-md-0 mt-3" id="col_home">
                 <p>
                 Destacamos los beneficios tanto físicos como emocionales
                 que el contacto con la naturaleza y el cultivo de plantas
